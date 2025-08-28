@@ -1665,6 +1665,61 @@ section.menu-section h1 {
   grid-template-columns:1fr 1fr;
   gap:36px clamp(24px,4vw,60px);
 }
+
+/* === RESZPONZÍV FINOMÍTÁSOK === */
+@media (max-width: 768px) {
+  .hero-section h1 { font-size: 2rem; }
+  .hero-section p { font-size: 1rem; }
+
+  .menu-section .wrap {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .menu-section .col { width: 100%; }
+
+  .daily-section h1 { font-size: 2rem; }
+  .physicist-name { font-size: 1.2rem; }
+}
+
+@media (max-width: 500px) {
+  .day-card {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .site-footer {
+    padding: 2rem 1rem;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;   /* minden blokk középre */
+    text-align: center;    /* szövegek is középre */
+    gap: 2rem;
+  }
+
+  .footer-about,
+  .footer-hours,
+  .footer-contact,
+  .footer-social {
+    flex: none;
+    width: 100%;
+    max-width: 400px;      /* ne legyen túl széles */
+  }
+
+  .footer-contact a {
+    display: inline-block; /* ne törje hülyén a sort */
+  }
+
+  .footer-social {
+    padding: 1rem 0;
+  }
+}
+
+
+
 @media (max-width:900px){
   .grid{grid-template-columns:1fr}
 }
